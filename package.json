@@ -6,6 +6,8 @@
   "scripts": {
     "start": "ts-node bin/index.ts",
     "dev": "nodemon bin/index.ts",
+    "run1": "ts-node bin/index1.ts",
+    "dev1": "nodemon bin/index1.ts",
     "test": "vitest"
   },
   "keywords": [],

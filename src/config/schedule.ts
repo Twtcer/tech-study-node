@@ -30,6 +30,11 @@ export type Schedule = {
    * @example  [60, 120] 则表示随机取 60 ~ 120 分钟刷新一次
    */
   refreshCookieInterval: [number, number];
+
+      /**
+   * @description 单次运行
+   */
+  onceRun: boolean;
 };
 
 /**
@@ -37,11 +42,12 @@ export type Schedule = {
  */
 export const SCHEDULE_CONFIG: Schedule[] = [
   {
-    nick: 'xxx',
-    token: 'xxxxxxxxxxxxxxxxxxxxxxxxxx',
+    nick: 'tech',
+    token: 'xxxxxx',
     cron: '0 0 12 * * ?',
     taskConfig: [true, true, true, true],
     paperExitAfterWrong: false,
     refreshCookieInterval: [60, 120],
+    onceRun: true
   },
 ];
