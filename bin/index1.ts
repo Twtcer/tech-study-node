@@ -452,12 +452,14 @@ else{
         await runStudyJob(jobConfig, effectiveJobs).catch((err) => {
           console.log('runStudyJob error', err);
         });
+        return;
       } else {
         await runRefreshJob(jobConfig, effectiveJobs).catch((err) => {
           console.log('runRefreshJob', err);
         });
+        return;
       } 
-  runJob();
+  //runJob();
     }); 	 
 }
   };
