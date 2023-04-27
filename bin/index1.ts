@@ -470,7 +470,8 @@ else{
 (() => {
    // 执行清除日志任务 
   shared.log.autoClean();
-
+  // 清除cookie
+  
   let config = SCHEDULE_CONFIG[0]; 
   if(config.onceRun){
    startJobs();
