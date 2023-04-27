@@ -36,7 +36,7 @@ const PUP_CONFIG: pup.PuppeteerLaunchOptions = {
    * @description 可执行文件的路径
    * @example 'google-chrome' for linux, '.local_chromium/chrome.exe' from win
    */
-  executablePath: '.local_chromium/chrome.exe',
+  executablePath: '../.local_chromium/chrome.exe',
   /**
    * @description 忽略默认配置
    */
